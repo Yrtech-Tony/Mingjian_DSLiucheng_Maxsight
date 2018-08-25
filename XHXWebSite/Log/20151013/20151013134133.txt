@@ -1,0 +1,9 @@
+System.Data.OleDb.OleDbException: [DBNETLIB][ConnectionOpen (Connect()).]SQL Server 不存在或拒绝访问。
+   在 System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   在 System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.OleDb.OleDbConnection.Open()
+   在 CommonHandler.query(String sql) 位置 d:\D盘\workspace\Net3.5\迈巴赫\XHXWebSite\App_Code\CommonHandler.cs:行号 63 
+select CurrentVersion from ProjectVersion
