@@ -1,0 +1,14 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>C:\Workspace\Mingjian_DS_liucheng_Maxsight\发布文件\|C:\Workspace\Mingjian_DS_Maxsight\发布文件\|C:\Workspace\Mingjian_YFND_liucheg_Maxsight\发布文件\|C:\New Folder\Mingjian_YFND_Liucheng_Maxsight\发布文件\</PublishUrlHistory>
+    <InstallUrlHistory>http://123.57.229.128/DSLiuchengClient/|http://123.57.229.128/YFNDLiuchengClient/</InstallUrlHistory>
+    <SupportUrlHistory>
+    </SupportUrlHistory>
+    <UpdateUrlHistory>
+    </UpdateUrlHistory>
+    <BootstrapperUrlHistory>
+    </BootstrapperUrlHistory>
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,1788 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EEECAB09-9436-4158-85B8-F9CB0C13223C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XHX</RootNamespace>
+    <AssemblyName>DSLiucheng</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ManifestCertificateThumbprint>B0160E4D3452C34EA06619DCC42030F2E1A1D426</ManifestCertificateThumbprint>
+    <ManifestKeyFile>XHX_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <PublishUrl>C:\Workspace\Mingjian_DS_liucheng_Maxsight\发布文件\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://123.57.229.128/DSLiuchengClient/</InstallUrl>
+    <ProductName>DS流程</ProductName>
+    <PublisherName>北京怡睿科技发展有限公司</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aliyun.OpenServices, Version=1.0.5290.21916, Culture=neutral, PublicKeyToken=0ad4175f0dac0b9b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Aliyun.OpenServices.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.DSOFramer, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Controls\AxInterop.DSOFramer.dll</HintPath>
+    </Reference>
+    <Reference Include="DbAccess, Version=1.19.1506.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DbAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v9.1, Version=9.1.1.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevExpress\DevExpress.BonusSkins.v9.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v9.1, Version=9.1.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevExpress\DevExpress.Data.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.OfficeSkins.v9.1, Version=9.1.1.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevExpress\DevExpress.OfficeSkins.v9.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v9.1, Version=9.1.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevExpress\DevExpress.Utils.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v9.1, Version=9.1.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevExpress\DevExpress.XtraEditors.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v9.1.Design, Version=9.1.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevExpress\DevExpress.XtraEditors.v9.1.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v9.1, Version=9.1.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevExpress\DevExpress.XtraGrid.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v9.1.Design, Version=9.1.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevExpress\DevExpress.XtraGrid.v9.1.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v9.1, Version=9.1.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\DevExpress\DevExpress.XtraLayout.v9.1.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSLib.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Controls\ICSLib.Controls\ICSLib.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics3.Excel.v10.2, Version=10.2.20102.2064, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Controls\Infragistics3.Excel.v10.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.DSOFramer, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Controls\Interop.DSOFramer.dll</HintPath>
+    </Reference>
+    <Reference Include="KP-ImageViewerV2, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Controls\KP-ImageViewerV2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="OFFICE, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\OFFICE.DLL</HintPath>
+    </Reference>
+    <Reference Include="OfficeControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Controls\OfficeControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.80.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\System.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BindComBox.cs" />
+    <Compile Include="Common\BufferColumnDto.cs" />
+    <Compile Include="Common\CommonHandler.cs" />
+    <Compile Include="Common\CustomDisplayDataSource.cs" />
+    <Compile Include="Common\CustomDisplayObject.cs" />
+    <Compile Include="Common\DynamicColumnDataSet.cs" />
+    <Compile Include="Common\DynamicColumnInfo.cs" />
+    <Compile Include="Common\DynamicColumnUtil.cs" />
+    <Compile Include="Common\DynamicData.cs" />
+    <Compile Include="Common\ExcelUtil.cs" />
+    <Compile Include="Common\GridCheckMarksSelection.cs" />
+    <Compile Include="Common\LocalService.cs" />
+    <Compile Include="Common\MSExcelUtil.cs" />
+    <Compile Include="Common\ReflectionUtil.cs" />
+    <Compile Include="Common\ReflectorUtil.cs" />
+    <Compile Include="Common\RowVisibilityHelper.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\SqliteHelper.cs" />
+    <Compile Include="Common\UploadFileToAliyun.cs" />
+    <Compile Include="Common\XtraGridDataHandler.cs" />
+    <Compile Include="Common\XtraGridExcelExporter.cs" />
+    <Compile Include="Common\XtraGridExcelExporterBase.cs" />
+    <Compile Include="Common\ZipHelper.cs" />
+    <Compile Include="DTO\AgreeTypeDto.cs" />
+    <Compile Include="DTO\AnswerLogDto.cs" />
+    <Compile Include="DTO\AnswerStatusTypeCodeDto.cs" />
+    <Compile Include="DTO\ArbitrationTeamAdviseDto.cs" />
+    <Compile Include="DTO\AreaDto.cs" />
+    <Compile Include="DTO\AreaShopDto.cs" />
+    <Compile Include="DTO\AreaTypeDto.cs" />
+    <Compile Include="DTO\ChapterDto.cs" />
+    <Compile Include="DTO\CheckOptionsDto.cs" />
+    <Compile Include="DTO\AnswerErrorDataDto.cs" />
+    <Compile Include="DTO\SalesConsultantReportDto.cs" />
+    <Compile Include="DTO\InspectionStandardReportDto.cs" />
+    <Compile Include="DTO\MemberTypeDto.cs" />
+    <Compile Include="DTO\SalesOrAftersalesDto.cs" />
+    <Compile Include="DTO\LossDescDto.cs" />
+    <Compile Include="DTO\SalesConsultantDto.cs" />
+    <Compile Include="DTO\ExamTypeDto.cs" />
+    <Compile Include="DTO\ExecuteTeamAlterDto.cs" />
+    <Compile Include="DTO\FFVRateDto.cs" />
+    <Compile Include="DTO\FFVShopRateDto.cs" />
+    <Compile Include="DTO\FileAndPictureDto.cs" />
+    <Compile Include="DTO\FileTypeDto.cs" />
+    <Compile Include="DTO\FinallyScoreRateDto.cs.cs" />
+    <Compile Include="DTO\InspectionStandardDto.cs" />
+    <Compile Include="DTO\LinkDto.cs" />
+    <Compile Include="DTO\LossResultDto.cs" />
+    <Compile Include="DTO\NoticeAttachmentDto.cs" />
+    <Compile Include="DTO\NoticeDto.cs" />
+    <Compile Include="DTO\ProgramDto.cs" />
+    <Compile Include="DTO\ProjectDto.cs" />
+    <Compile Include="DTO\RecheckDtlDto.cs" />
+    <Compile Include="DTO\RecheckDtlErrorSumDto.cs" />
+    <Compile Include="DTO\ReCheckDto.cs" />
+    <Compile Include="DTO\ReCheckLogDto.cs" />
+    <Compile Include="DTO\RecheckProcessDtlDto.cs" />
+    <Compile Include="DTO\RecheckStatusDto.cs" />
+    <Compile Include="DTO\RoleTypeDto.cs" />
+    <Compile Include="DTO\RoleTypeProgramDto.cs" />
+    <Compile Include="DTO\ScoreRateDto.cs" />
+    <Compile Include="DTO\ScoreSetDto.cs" />
+    <Compile Include="DTO\ScoreWeigthRateDto.cs" />
+    <Compile Include="DTO\SearchColumnDto.cs" />
+    <Compile Include="DTO\ShopScoreInfoDto.cs" />
+    <Compile Include="DTO\ShopSubjectExamTypeDto.cs" />
+    <Compile Include="DTO\ShopSubjectScoreDto.cs" />
+    <Compile Include="DTO\SingleShopReport\AllScoreSumDto.cs" />
+    <Compile Include="DTO\SingleShopReport\ChaptersScoreDto.cs" />
+    <Compile Include="DTO\SingleShopReport\AllShopScoreDto.cs" />
+    <Compile Include="DTO\SingleShopReport\AllScoreDto.cs" />
+    <Compile Include="DTO\SingleShopReport\ShopChapterScoreDto.cs" />
+    <Compile Include="DTO\SingleShopReport\LinkScoreDto.cs" />
+    <Compile Include="DTO\SingleShopReport\ShopReportDto.cs" />
+    <Compile Include="DTO\SingleShopReport\SubjectsScoreDto.cs" />
+    <Compile Include="DTO\SpecialCaseDto.cs" />
+    <Compile Include="DTO\StandardRateAllDto.cs" />
+    <Compile Include="DTO\StandardRateArea.cs" />
+    <Compile Include="DTO\SubjectCheckDto.cs" />
+    <Compile Include="DTO\SubjectDto.cs" />
+    <Compile Include="DTO\ShopDto.cs" />
+    <Compile Include="DTO\SubjectTypeDto.cs" />
+    <Compile Include="DTO\UserInfoDto.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageForm.Designer.cs">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageForm.resx">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\AllPictureShow2.resx">
+      <DependentUpon>AllPictureShow2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\AnswerRecheck.resx">
+      <DependentUpon>AnswerRecheck.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\AnswerScoreLog.resx">
+      <DependentUpon>AnswerScoreLog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\AnswerStartInfo.resx">
+      <DependentUpon>AnswerStartInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\AnswerSubjectForm.resx">
+      <DependentUpon>AnswerSubjectForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\AnswerSubjects.resx">
+      <DependentUpon>AnswerSubjects.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\ArbitrationTeam.resx">
+      <DependentUpon>ArbitrationTeam.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\Area.resx">
+      <DependentUpon>Area.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\BasePopForm.resx">
+      <DependentUpon>BasePopForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\ChapterPop.resx">
+      <DependentUpon>ChapterPop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\Comparison.resx">
+      <DependentUpon>Comparison.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\ExecuteTeamAlter.resx">
+      <DependentUpon>ExecuteTeamAlter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\FinallyScoreRate.resx">
+      <DependentUpon>FinallyScoreRate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\InspectionStandard.resx">
+      <DependentUpon>InspectionStandard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\LinkPop.resx">
+      <DependentUpon>LinkPop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\LossResultForm.resx">
+      <DependentUpon>LossResultForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\LossResultReg.resx">
+      <DependentUpon>LossResultReg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\NoticePop.resx">
+      <DependentUpon>NoticePop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\NoticeSearch.resx">
+      <DependentUpon>NoticeSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\OfficeShow.resx">
+      <DependentUpon>OfficeShow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\PadToDB.resx">
+      <DependentUpon>PadToDB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\PictureShow2.resx">
+      <DependentUpon>PictureShow2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\RateSearch.resx">
+      <DependentUpon>RateSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\ReCheck.resx">
+      <DependentUpon>ReCheck.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\ReCheckDtl.resx">
+      <DependentUpon>ReCheckDtl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\ReCheckDtlErrorSum.resx">
+      <DependentUpon>ReCheckDtlErrorSum.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\ReCheckLog.resx">
+      <DependentUpon>ReCheckLog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\ReCheckProcess.resx">
+      <DependentUpon>ReCheckProcess.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\RoleTypeProgram.resx">
+      <DependentUpon>RoleTypeProgram.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\ScoreSet.resx">
+      <DependentUpon>ScoreSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\SelectAllTest.resx">
+      <DependentUpon>SelectAllTest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\Shop.resx">
+      <DependentUpon>Shop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\ShopSubjectType.resx">
+      <DependentUpon>ShopSubjectType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\Shop_Popup.resx">
+      <DependentUpon>Shop_Popup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\SpecialCasePop.resx">
+      <DependentUpon>SpecialCasePop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\SpecialCaseReg.resx">
+      <DependentUpon>SpecialCaseReg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\SpecialCaseSearch.resx">
+      <DependentUpon>SpecialCaseSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\SpecialCaseSearchPop.resx">
+      <DependentUpon>SpecialCaseSearchPop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\StandardRate.resx">
+      <DependentUpon>StandardRate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\SubjectFile.resx">
+      <DependentUpon>SubjectFile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\SubjectOnePop.resx">
+      <DependentUpon>SubjectOnePop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\Subjects.resx">
+      <DependentUpon>Subjects.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\SujbectPop.resx">
+      <DependentUpon>SujbectPop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\UserDefinePopup.resx">
+      <DependentUpon>UserDefinePopup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\UserDefineSearch.resx">
+      <DependentUpon>UserDefineSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\UserInfo.resx">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocalService\WeightRateSearch.resx">
+      <DependentUpon>WeightRateSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AllPictureShow2.resx">
+      <DependentUpon>AllPictureShow2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AnswerScoreLog.resx">
+      <DependentUpon>AnswerScoreLog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AnswerStartInfo.resx">
+      <DependentUpon>AnswerStartInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AnswerSubjectForm.resx">
+      <DependentUpon>AnswerSubjectForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AnswerSubjects.resx">
+      <DependentUpon>AnswerSubjects.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ArbitrationTeam.resx">
+      <DependentUpon>ArbitrationTeam.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Area.resx">
+      <DependentUpon>Area.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\BasePopForm.resx">
+      <DependentUpon>BasePopForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ChapterPop.resx">
+      <DependentUpon>ChapterPop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Comparison.resx">
+      <DependentUpon>Comparison.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AnswerRecheck.resx">
+      <DependentUpon>AnswerRecheck.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AnswerErrorData.resx">
+      <DependentUpon>AnswerErrorData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SingleShopReport_UploadData.resx">
+      <DependentUpon>SingleShopReport_UploadData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SingleShopReport_Week.resx">
+      <DependentUpon>SingleShopReport_Week.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SalesContantReport1.resx">
+      <DependentUpon>SalesContantReport1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SalesContantReport.resx">
+      <DependentUpon>SalesContantReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReCheckErrorType.resx">
+      <DependentUpon>ReCheckErrorType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\InspectionStandardReportSearch.resx">
+      <DependentUpon>InspectionStandardReportSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SalesContantPop.resx">
+      <DependentUpon>SalesContantPop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReCheckDtlErrorSum.resx">
+      <DependentUpon>ReCheckDtlErrorSum.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DeleteAnswerScore.resx">
+      <DependentUpon>DeleteAnswerScore.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ExecuteTeamAlter.resx">
+      <DependentUpon>ExecuteTeamAlter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FinallyScoreRate.resx">
+      <DependentUpon>FinallyScoreRate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\InspectionStandard.resx">
+      <DependentUpon>InspectionStandard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LinkPop.resx">
+      <DependentUpon>LinkPop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LossResultForm.resx">
+      <DependentUpon>LossResultForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LossResultReg.resx">
+      <DependentUpon>LossResultReg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\NoticePop.resx">
+      <DependentUpon>NoticePop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\NoticeSearch.resx">
+      <DependentUpon>NoticeSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\OfficeShow.resx">
+      <DependentUpon>OfficeShow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PadToDB.resx">
+      <DependentUpon>PadToDB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PictureShow.resx">
+      <DependentUpon>PictureShow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PictureShow2.resx">
+      <DependentUpon>PictureShow2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RateSearch.resx">
+      <DependentUpon>RateSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReCheck.resx">
+      <DependentUpon>ReCheck.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReCheckDtl.resx">
+      <DependentUpon>ReCheckDtl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReCheckLog.resx">
+      <DependentUpon>ReCheckLog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReCheckProcess.resx">
+      <DependentUpon>ReCheckProcess.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RoleTypeProgram.resx">
+      <DependentUpon>RoleTypeProgram.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ScoreSet.resx">
+      <DependentUpon>ScoreSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SelectAllTest.resx">
+      <DependentUpon>SelectAllTest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Shop.resx">
+      <DependentUpon>Shop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ShopScoreSearch.resx">
+      <DependentUpon>ShopScoreSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ShopSubjectType.resx">
+      <DependentUpon>ShopSubjectType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Shop_Popup.resx">
+      <DependentUpon>Shop_Popup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AllPictureShow.resx">
+      <DependentUpon>AllPictureShow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SingleShopReport.resx">
+      <DependentUpon>SingleShopReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SpecialCasePop.resx">
+      <DependentUpon>SpecialCasePop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SpecialCaseReg.resx">
+      <DependentUpon>SpecialCaseReg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SpecialCaseSearch.resx">
+      <DependentUpon>SpecialCaseSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SpecialCaseSearchPop.resx">
+      <DependentUpon>SpecialCaseSearchPop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\StandardRate.resx">
+      <DependentUpon>StandardRate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SubjectFile.resx">
+      <DependentUpon>SubjectFile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SubjectOnePop.resx">
+      <DependentUpon>SubjectOnePop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Subjects.resx">
+      <DependentUpon>Subjects.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SujbectPop.resx">
+      <DependentUpon>SujbectPop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserDefinePopup.resx">
+      <DependentUpon>UserDefinePopup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserDefineSearch.resx">
+      <DependentUpon>UserDefineSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserInfo.resx">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WeightRateSearch.resx">
+      <DependentUpon>WeightRateSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ViewLocalService\AllPictureShow2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\AllPictureShow2.designer.cs">
+      <DependentUpon>AllPictureShow2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\AnswerRecheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\AnswerRecheck.Designer.cs">
+      <DependentUpon>AnswerRecheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\AnswerScoreLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\AnswerScoreLog.Designer.cs">
+      <DependentUpon>AnswerScoreLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\AnswerStartInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\AnswerStartInfo.Designer.cs">
+      <DependentUpon>AnswerStartInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\AnswerSubjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\AnswerSubjectForm.Designer.cs">
+      <DependentUpon>AnswerSubjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\AnswerSubjects.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\AnswerSubjects.Designer.cs">
+      <DependentUpon>AnswerSubjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\ArbitrationTeam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\ArbitrationTeam.Designer.cs">
+      <DependentUpon>ArbitrationTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\Area.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\Area.Designer.cs">
+      <DependentUpon>Area.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\BasePopForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\BasePopForm.Designer.cs">
+      <DependentUpon>BasePopForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\ChapterPop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\ChapterPop.Designer.cs">
+      <DependentUpon>ChapterPop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\Comparison.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\Comparison.Designer.cs">
+      <DependentUpon>Comparison.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\ExecuteTeamAlter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\ExecuteTeamAlter.Designer.cs">
+      <DependentUpon>ExecuteTeamAlter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\FinallyScoreRate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\FinallyScoreRate.Designer.cs">
+      <DependentUpon>FinallyScoreRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\InspectionStandard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\InspectionStandard.Designer.cs">
+      <DependentUpon>InspectionStandard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\LinkPop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\LinkPop.Designer.cs">
+      <DependentUpon>LinkPop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\LossResultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\LossResultForm.Designer.cs">
+      <DependentUpon>LossResultForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\LossResultReg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\LossResultReg.Designer.cs">
+      <DependentUpon>LossResultReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\NoticePop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\NoticePop.Designer.cs">
+      <DependentUpon>NoticePop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\NoticeSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\NoticeSearch.Designer.cs">
+      <DependentUpon>NoticeSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\OfficeShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\OfficeShow.Designer.cs">
+      <DependentUpon>OfficeShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\PadToDB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\PadToDB.designer.cs">
+      <DependentUpon>PadToDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\PictureShow2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\PictureShow2.designer.cs">
+      <DependentUpon>PictureShow2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\RateSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\RateSearch.Designer.cs">
+      <DependentUpon>RateSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\ReCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\ReCheck.Designer.cs">
+      <DependentUpon>ReCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\ReCheckDtl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\ReCheckDtl.Designer.cs">
+      <DependentUpon>ReCheckDtl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\ReCheckDtlErrorSum.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\ReCheckDtlErrorSum.Designer.cs">
+      <DependentUpon>ReCheckDtlErrorSum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\ReCheckLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\ReCheckLog.Designer.cs">
+      <DependentUpon>ReCheckLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\ReCheckProcess.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\ReCheckProcess.Designer.cs">
+      <DependentUpon>ReCheckProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\RoleTypeProgram.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\RoleTypeProgram.Designer.cs">
+      <DependentUpon>RoleTypeProgram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\ScoreSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\ScoreSet.Designer.cs">
+      <DependentUpon>ScoreSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\SelectAllTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\SelectAllTest.Designer.cs">
+      <DependentUpon>SelectAllTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\Shop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\Shop.Designer.cs">
+      <DependentUpon>Shop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\ShopSubjectType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\ShopSubjectType.Designer.cs">
+      <DependentUpon>ShopSubjectType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\Shop_Popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\Shop_Popup.Designer.cs">
+      <DependentUpon>Shop_Popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\SpecialCasePop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\SpecialCasePop.Designer.cs">
+      <DependentUpon>SpecialCasePop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\SpecialCaseReg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\SpecialCaseReg.Designer.cs">
+      <DependentUpon>SpecialCaseReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\SpecialCaseSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\SpecialCaseSearch.Designer.cs">
+      <DependentUpon>SpecialCaseSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\SpecialCaseSearchPop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\SpecialCaseSearchPop.Designer.cs">
+      <DependentUpon>SpecialCaseSearchPop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\StandardRate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\StandardRate.Designer.cs">
+      <DependentUpon>StandardRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\SubjectFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\SubjectFile.Designer.cs">
+      <DependentUpon>SubjectFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\SubjectOnePop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\SubjectOnePop.Designer.cs">
+      <DependentUpon>SubjectOnePop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\Subjects.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\Subjects.Designer.cs">
+      <DependentUpon>Subjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\SujbectPop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\SujbectPop.Designer.cs">
+      <DependentUpon>SujbectPop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\UserDefinePopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\UserDefinePopup.Designer.cs">
+      <DependentUpon>UserDefinePopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\UserDefineSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\UserDefineSearch.Designer.cs">
+      <DependentUpon>UserDefineSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\UserInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\UserInfo.Designer.cs">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocalService\WeightRateSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewLocalService\WeightRateSearch.Designer.cs">
+      <DependentUpon>WeightRateSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AllPictureShow2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AllPictureShow2.designer.cs">
+      <DependentUpon>AllPictureShow2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AnswerScoreLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\AnswerScoreLog.Designer.cs">
+      <DependentUpon>AnswerScoreLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AnswerStartInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AnswerStartInfo.Designer.cs">
+      <DependentUpon>AnswerStartInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AnswerSubjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AnswerSubjectForm.Designer.cs">
+      <DependentUpon>AnswerSubjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AnswerSubjects.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\AnswerSubjects.Designer.cs">
+      <DependentUpon>AnswerSubjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ArbitrationTeam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ArbitrationTeam.Designer.cs">
+      <DependentUpon>ArbitrationTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Area.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Area.Designer.cs">
+      <DependentUpon>Area.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\BasePopForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\BasePopForm.Designer.cs">
+      <DependentUpon>BasePopForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChapterPop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ChapterPop.Designer.cs">
+      <DependentUpon>ChapterPop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Comparison.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Comparison.Designer.cs">
+      <DependentUpon>Comparison.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AnswerRecheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\AnswerRecheck.Designer.cs">
+      <DependentUpon>AnswerRecheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AnswerErrorData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\AnswerErrorData.Designer.cs">
+      <DependentUpon>AnswerErrorData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SingleShopReport_UploadData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SingleShopReport_UploadData.designer.cs">
+      <DependentUpon>SingleShopReport_UploadData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SingleShopReport_Week.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SingleShopReport_Week.designer.cs">
+      <DependentUpon>SingleShopReport_Week.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SalesContantReport1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SalesContantReport1.Designer.cs">
+      <DependentUpon>SalesContantReport1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SalesContantReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SalesContantReport.Designer.cs">
+      <DependentUpon>SalesContantReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReCheckErrorType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ReCheckErrorType.Designer.cs">
+      <DependentUpon>ReCheckErrorType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\InspectionStandardReportSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\InspectionStandardReportSearch.Designer.cs">
+      <DependentUpon>InspectionStandardReportSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SalesContantPop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SalesContantPop.Designer.cs">
+      <DependentUpon>SalesContantPop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReCheckDtlErrorSum.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ReCheckDtlErrorSum.Designer.cs">
+      <DependentUpon>ReCheckDtlErrorSum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DeleteAnswerScore.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\DeleteAnswerScore.Designer.cs">
+      <DependentUpon>DeleteAnswerScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ExecuteTeamAlter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ExecuteTeamAlter.Designer.cs">
+      <DependentUpon>ExecuteTeamAlter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FinallyScoreRate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\FinallyScoreRate.Designer.cs">
+      <DependentUpon>FinallyScoreRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\InspectionStandard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\InspectionStandard.Designer.cs">
+      <DependentUpon>InspectionStandard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LinkPop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LinkPop.Designer.cs">
+      <DependentUpon>LinkPop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LossResultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LossResultForm.Designer.cs">
+      <DependentUpon>LossResultForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LossResultReg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\LossResultReg.Designer.cs">
+      <DependentUpon>LossResultReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\NoticePop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\NoticePop.Designer.cs">
+      <DependentUpon>NoticePop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\NoticeSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\NoticeSearch.Designer.cs">
+      <DependentUpon>NoticeSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\OfficeShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\OfficeShow.Designer.cs">
+      <DependentUpon>OfficeShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PadToDB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\PadToDB.designer.cs">
+      <DependentUpon>PadToDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PictureShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PictureShow.Designer.cs">
+      <DependentUpon>PictureShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PictureShow2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PictureShow2.designer.cs">
+      <DependentUpon>PictureShow2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RateSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\RateSearch.Designer.cs">
+      <DependentUpon>RateSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ReCheck.Designer.cs">
+      <DependentUpon>ReCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReCheckDtl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ReCheckDtl.Designer.cs">
+      <DependentUpon>ReCheckDtl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReCheckLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ReCheckLog.Designer.cs">
+      <DependentUpon>ReCheckLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReCheckProcess.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ReCheckProcess.Designer.cs">
+      <DependentUpon>ReCheckProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RoleTypeProgram.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\RoleTypeProgram.Designer.cs">
+      <DependentUpon>RoleTypeProgram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ScoreSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ScoreSet.Designer.cs">
+      <DependentUpon>ScoreSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SelectAllTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SelectAllTest.Designer.cs">
+      <DependentUpon>SelectAllTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Shop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Shop.Designer.cs">
+      <DependentUpon>Shop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ShopScoreSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ShopScoreSearch.Designer.cs">
+      <DependentUpon>ShopScoreSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ShopSubjectType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ShopSubjectType.Designer.cs">
+      <DependentUpon>ShopSubjectType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Shop_Popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Shop_Popup.Designer.cs">
+      <DependentUpon>Shop_Popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AllPictureShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AllPictureShow.Designer.cs">
+      <DependentUpon>AllPictureShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SingleShopReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SingleShopReport.designer.cs">
+      <DependentUpon>SingleShopReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SpecialCasePop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SpecialCasePop.Designer.cs">
+      <DependentUpon>SpecialCasePop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SpecialCaseReg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SpecialCaseReg.Designer.cs">
+      <DependentUpon>SpecialCaseReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SpecialCaseSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SpecialCaseSearch.Designer.cs">
+      <DependentUpon>SpecialCaseSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SpecialCaseSearchPop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SpecialCaseSearchPop.Designer.cs">
+      <DependentUpon>SpecialCaseSearchPop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\StandardRate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\StandardRate.Designer.cs">
+      <DependentUpon>StandardRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SubjectFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SubjectFile.Designer.cs">
+      <DependentUpon>SubjectFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SubjectOnePop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SubjectOnePop.Designer.cs">
+      <DependentUpon>SubjectOnePop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Subjects.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Subjects.Designer.cs">
+      <DependentUpon>Subjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SujbectPop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SujbectPop.Designer.cs">
+      <DependentUpon>SujbectPop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserDefinePopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UserDefinePopup.Designer.cs">
+      <DependentUpon>UserDefinePopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserDefineSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UserDefineSearch.Designer.cs">
+      <DependentUpon>UserDefineSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UserInfo.Designer.cs">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WeightRateSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WeightRateSearch.Designer.cs">
+      <DependentUpon>WeightRateSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\localhost\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grid_detail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grid_pagego.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Resources\grid_popup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgAdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgAddRow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgConfirm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgDelete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgDeleteRow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgError.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgExcelDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgFavoris.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgInformation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgInit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgLock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgNote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgOK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgQuestion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSearch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgSearch1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgWarning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XHX_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="AxInterop.DSOFramer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DbAccess">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.BonusSkins.v9.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Data.v9.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.OfficeSkins.v9.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Utils.v9.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraEditors.v9.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraEditors.v9.1.Design">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraGrid.v9.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraGrid.v9.1.Design">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraLayout.v9.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraNavBar.v9.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ICSharpCode.SharpZipLib">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ICSLib.Controls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics3.Excel.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Interop.DSOFramer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="KP-ImageViewerV2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Office.Interop.Excel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Vbe.Interop">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="office">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="OfficeControl">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="SQLite.Interop.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="System.Data.SQLite">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://123.57.229.128/DSLiuchengServer/service.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\localhost\</RelPath>
+      <UpdateFromURL>http://123.57.229.128/DSLiuchengServer/service.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>XHX_localhost_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SQLite.Interop.dll" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="Web References\localhost\PictureDto.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\localhost\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\localhost\service.disco" />
+    <None Include="Web References\localhost\service.wsdl" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(SolutionDir)Lib\SQLite.Interop.dll" "$(TargetDir)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>
