@@ -419,7 +419,7 @@ namespace XHX.ViewLocalService
                     inspectionStandardDto.ProjectCode = Convert.ToString(ds2.Tables[0].Rows[i]["ProjectCode"]);
                     inspectionStandardDto.SeqNO = Convert.ToInt32(ds2.Tables[0].Rows[i]["SeqNO"]);
                     inspectionStandardDto.InspectionStandardName = Convert.ToString(ds2.Tables[0].Rows[i]["InspectionStandardName"]);
-                    inspectionStandardDto.CheckOptionCode = Convert.ToString(ds2.Tables[0].Rows[i]["CheckOptionCode"]) == "" ? "01" : Convert.ToString(ds2.Tables[0].Rows[i]["CheckOptionCode"]);
+                    inspectionStandardDto.CheckOptionCode = Convert.ToString(ds2.Tables[0].Rows[i]["CheckOptionCode"]) == "" ? "02" : Convert.ToString(ds2.Tables[0].Rows[i]["CheckOptionCode"]);
                     inspectionStandardlist.Add(inspectionStandardDto);
                 }
 
@@ -467,7 +467,7 @@ namespace XHX.ViewLocalService
                     inspectionStandardDto.ProjectCode = Convert.ToString(ds2.Tables[0].Rows[i]["ProjectCode"]);
                     inspectionStandardDto.SeqNO = Convert.ToInt32(ds2.Tables[0].Rows[i]["SeqNO"]);
                     inspectionStandardDto.InspectionStandardName = Convert.ToString(ds2.Tables[0].Rows[i]["InspectionStandardName"]);
-                    inspectionStandardDto.CheckOptionCode = Convert.ToString(ds2.Tables[0].Rows[i]["CheckOptionCode"]) == "" ? "01" : Convert.ToString(ds2.Tables[0].Rows[i]["CheckOptionCode"]);
+                    inspectionStandardDto.CheckOptionCode = Convert.ToString(ds2.Tables[0].Rows[i]["CheckOptionCode"]) == "" ? "02" : Convert.ToString(ds2.Tables[0].Rows[i]["CheckOptionCode"]);
                     inspectionStandardlist.Add(inspectionStandardDto);
                 }
 
@@ -512,7 +512,7 @@ namespace XHX.ViewLocalService
                     inspectionStandardDto.ProjectCode = Convert.ToString(ds2.Tables[0].Rows[i]["ProjectCode"]);
                     inspectionStandardDto.SeqNO = Convert.ToInt32(ds2.Tables[0].Rows[i]["SeqNO"]);
                     inspectionStandardDto.InspectionStandardName = Convert.ToString(ds2.Tables[0].Rows[i]["InspectionStandardName"]);
-                    inspectionStandardDto.CheckOptionCode = Convert.ToString(ds2.Tables[0].Rows[i]["CheckOptionCode"]) == "" ? "01" : Convert.ToString(ds2.Tables[0].Rows[i]["CheckOptionCode"]);
+                    inspectionStandardDto.CheckOptionCode = Convert.ToString(ds2.Tables[0].Rows[i]["CheckOptionCode"]) == "" ? "02" : Convert.ToString(ds2.Tables[0].Rows[i]["CheckOptionCode"]);
                     inspectionStandardlist.Add(inspectionStandardDto);
                 }
 
@@ -788,7 +788,7 @@ namespace XHX.ViewLocalService
                     inspectionStandardDto.SeqNO = Convert.ToInt32(ds.Tables[0].Rows[i]["SeqNO"]);
                     inspectionStandardDto.FileName = Convert.ToString(ds.Tables[0].Rows[i]["FileName"]);
                     inspectionStandardDto.FileType = Convert.ToString(ds.Tables[0].Rows[i]["FileType"]);
-                    inspectionStandardDto.CheckOptionCode = Convert.ToString(ds.Tables[0].Rows[i]["CheckOptionCode"]) == "" ? "01" : Convert.ToString(ds.Tables[0].Rows[i]["CheckOptionCode"]);
+                    inspectionStandardDto.CheckOptionCode = Convert.ToString(ds.Tables[0].Rows[i]["CheckOptionCode"]) == "" ? "02" : Convert.ToString(ds.Tables[0].Rows[i]["CheckOptionCode"]);
                     inspectionStandardDto.FileExtend = Convert.ToString(ds.Tables[0].Rows[i]["FileExtend"]);
                     inspectionStandardlist.Add(inspectionStandardDto);
                 }
