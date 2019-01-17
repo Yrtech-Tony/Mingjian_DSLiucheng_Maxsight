@@ -281,5 +281,17 @@ namespace XHX.View
                 e.Appearance.BackColor = Color.Gray;
             }
         }
+
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+            SearchLoss(ProjectCode, txtSubjectCode.Text);
+        }
+
+        private void simpleButton3_Click(object sender, EventArgs e)
+        {
+            if (grcLossResult1.DataSource != null)
+                //CommonHandler.ExcelExport(grvShopScore);
+                CommonHandler.ExcelExportByExporter(grvLossResult1);
+        }
     }
 }
